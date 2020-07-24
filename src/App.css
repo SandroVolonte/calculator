@@ -1,0 +1,89 @@
+@font-face {
+  font-family: digital-7;
+  src: local("digital-7"), url("./fonts/digital-7.ttf") format("truetype");
+}
+
+.container-fluid{
+  background-color: grey;
+  display: flex;
+  height: 100vh;
+  place-content: center;
+
+}
+
+.calculator{
+  background-color: black;
+  font-family: digital-7, serif;
+  font-size: 200%;
+  min-height: 60vh;
+  width: 40vh;
+  display: grid;
+  grid-template-columns:   25%  25%  25%  25%;
+  grid-template-rows:   minmax(10%, auto)  10%  16%  16%  16%  16%  16%;
+  grid-template-areas:
+  "calcHistory calcHistory calcHistory calcHistory"
+  "currentInput currentInput currentInput currentInput"
+  "AC AC divide multiply"
+  "seven eight nine subtract"
+  "four five six add"
+  "one two three equals"
+  "zero zero decimal equals";
+}
+
+
+.calcHistory{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: orange;
+  background: green;
+  grid-area: calcHistory;
+
+}
+
+.currentInput{
+  display: flex;
+  color: whitesmoke;
+  background-color: blue;
+  grid-area: currentInput;
+  place-self: stretch;
+  justify-content: flex-end;
+  align-items: center;
+
+}
+
+.action{
+  background-color: grey;
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+}
+
+#clear{
+  grid-area: AC;
+}
+
+#divide{
+  grid-area: divide;
+}
+
+#multiply{
+  grid-area: multiply;
+}
+
+#subtract{
+  grid-area: subtract;
+
+}
+
+#add{
+  grid-area: add
+}
+
+#equals{
+  grid-area: equals;
+}
+
+
+
+
+
