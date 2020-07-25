@@ -18,6 +18,7 @@
   min-height: 60vh;
   width: 40vh;
   display: grid;
+  border: solid #282c34;
   grid-template-columns:   25%  25%  25%  25%;
   grid-template-rows:   minmax(10%, auto)  10%  16%  16%  16%  16%  16%;
   grid-template-areas:
@@ -34,17 +35,20 @@
 .calcHistory{
   display: flex;
   justify-content: flex-end;
+  float: top;
   align-items: center;
   color: orange;
-  background: green;
+  background-color: black;
   grid-area: calcHistory;
+  margin-bottom: 1%;
+  font-size: 80%;
 
 }
 
 .currentInput{
   display: flex;
   color: whitesmoke;
-  background-color: blue;
+  background-color: transparent;
   grid-area: currentInput;
   place-self: stretch;
   justify-content: flex-end;
@@ -83,7 +87,65 @@
   grid-area: equals;
 }
 
+#decimal{
+  grid-area: decimal;
+}
 
+#one{
+  grid-area: one;
+}
 
+#two{
+  grid-area: two;
+}
+
+#three{
+  grid-area: three;
+}
+
+#four{
+  grid-area: four;
+}
+
+#five{
+  grid-area: five;
+}
+
+#six{
+  grid-area: six;
+}
+
+#seven{
+  grid-area: seven;
+}
+
+#eight{
+  grid-area: eight;
+}
+
+#nine{
+  grid-area: nine;
+}
+
+#zero{
+  grid-area: zero;
+}
+
+.btn-op{
+  background-color: lightskyblue;
+}
+
+.btn-equals{
+  background-color: royalblue;
+}
+
+.btn-clear{
+  background-color: steelblue;
+}
+
+.btn{
+  font-size: 120%;
+  border: solid #282c34;
+}
 
 
